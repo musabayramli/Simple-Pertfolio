@@ -72,11 +72,14 @@
     </div>
 
     <script>
-      var togglebtn = document.querySelector(".togglebtn");
-      var nav = document.querySelector(".navlinks");
-      togglebtn.addEventListener("click", function () {
-        this.classList.toggle("click");
-        nav.classList.toggle("open");
+      const toggleBtn = document.querySelector(".togglebtn");
+      const navLinks = document.querySelector(".navlinks");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        toggleBtn.classList.toggle("open");
+        navLinks.classList.toggle("open");
+        body.classList.toggle("menu-open");
       });
     </script>
   </body>

@@ -1,90 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Portfolio Website Design</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-</head>
-<body>
-     <div class="hero-header">
-        <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-m"></i>
-                    <div class="logo-text">Musa Murad</div>
-                </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container">
-                 <div class="hero-pic" data-aos="zoom-in">
-                    <iframe src="https://giphy.com/embed/RbDKaczqWovIugyJmW" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                 </div>
-                 <div class="hero-text" data-aos="fade-up">
-                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
-                    <h1>Musa Murad Bayramli</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus dolorum quibusdam maiores magni quod rem in porro, laborum, laudantium ex repellendus explicabo, autem molestiae!</p>
-
-                    <div class="btn-group" data-aos="fade-up" data-aos-delay="100">
-                        <a href="images/my-cv.pdf" class="btn active" download>Download CV</a>
-                        <a href="https://wa.me/90703001428" target="_blank" class="btn">Contact</a>
-                    </div>
-
-                    <div class="social" data-aos="fade-up" data-aos-delay="200">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/musa-bayramli-497b88254/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/musabayramli" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                 </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-m"></i>
+            <div class="logo-text">Musa Murad</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+            <ul class="navlinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic" data-aos="zoom-in">
+            <iframe
+              src="https://giphy.com/embed/RbDKaczqWovIugyJmW"
+              width="480"
+              height="269"
+              frameborder="0"
+              class="giphy-embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="hero-text" data-aos="fade-up">
+            <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+            <h1>Musa Murad Bayramli</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              delectus dolorum quibusdam maiores magni quod rem in porro,
+              laborum, laudantium ex repellendus explicabo, autem molestiae!
+            </p>
+
+            <div class="btn-group" data-aos="fade-up" data-aos-delay="100">
+              <a href="images/my-cv.pdf" class="btn active" download
+                >Download CV</a
+              >
+              <a href="https://wa.me/90703001428" target="_blank" class="btn"
+                >Contact</a
+              >
+            </div>
+
+            <div class="social" >
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a
+                href="https://www.linkedin.com/in/musa-bayramli-497b88254/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/musabayramli" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
         </div>
-     </div>
+      </div>
+    </div>
 
-     <!-- Typed.js for text animation -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-     <!-- AOS JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-     <script>
-        // Toggle navigation menu
-        var togglebtn = document.querySelector(".togglebtn");
-        var nav = document.querySelector(".navlinks");
+    <!-- Typed.js for text animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      const toggleBtn = document.querySelector(".togglebtn");
+      const navLinks = document.querySelector(".navlinks");
+      const body = document.body;
 
-        togglebtn.addEventListener("click", function(){
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        });
+      toggleBtn.addEventListener("click", () => {
+        toggleBtn.classList.toggle("open");
+        navLinks.classList.toggle("open");
+        body.classList.toggle("menu-open");
+      });
 
-        // Typed.js for text effect
-        var typed = new Typed(".input", {
-            strings: ["Frontend Developer", "Computer Engineer", "Web Developer"],
-            typeSpeed: 70,
-            backSpeed: 55,
-            loop: true
-        });
+      // Typed.js for text effect
+      var typed = new Typed(".input", {
+        strings: ["Frontend Developer", "Computer Engineer", "Web Developer"],
+        typeSpeed: 70,
+        backSpeed: 55,
+        loop: true,
+      });
 
-        // AOS initialization
-        AOS.init({
-            duration: 1200,
-            easing: 'ease-in-out',
-            once: true
-        });
-     </script>
-</body>
+      // AOS initialization
+      AOS.init({
+        duration: 1200,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+  </body>
 </html>
