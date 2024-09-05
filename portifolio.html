@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Musa Murad</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- AOS Library for animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  </head>
+  <body>
+    <div class="portfolio-section">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-m"></i>
+            <div class="logo-text">Musa Murad</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="portfolio-container">
+          <h1 data-aos="fade-up">My Projects</h1>
+          <p class="portfolio-desc" data-aos="fade-up" data-aos-delay="100">
+            Here are some of the awesome projects I’ve worked on. Click to view
+            details.
+          </p>
+
+          <div class="portfolio-grid">
+            <div class="portfolio-item" data-aos="fade-right">
+              <img src="images/circle.webp" alt="Project 1" />
+              <div class="portfolio-info">
+                <h3>Colorid Circle</h3>
+                <p>İnteresting Simple Project</p>
+                <a
+                  href="https://musabayramli.github.io/colored_circles/"
+                  class="btn" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+            <div class="portfolio-item" data-aos="fade-left">
+              <img src="images/drag_drop.webp" alt="Project 2" />
+              <div class="portfolio-info">
+                <h3>Drag & Drop</h3>
+                <p>Drag and Drop with Confidently</p>
+                <a href="https://musabayramli.github.io/drag-drop/" class="btn" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+            <div class="portfolio-item" data-aos="fade-right">
+              <img src="images/animated.webp" alt="Project 3" />
+              <div class="portfolio-info">
+                <h3>Animated Template</h3>
+                <p>Web Application</p>
+                <a
+                  href="https://musabayramli.github.io/animated_tempilate/"
+                  class="btn" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+            <div class="portfolio-item" data-aos="fade-left">
+              <img src="images/eco.webp" alt="Project 4" />
+              <div class="portfolio-info">
+                <h3>Simple Ecommers</h3>
+                <p>Ecomers Site Simple Template</p>
+                <a
+                  href="https://musabayramli.github.io/demo-e-commers/"
+                  class="btn" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AOS Library for scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        easing: "ease-in-out",
+        once: true,
+      });
+
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
